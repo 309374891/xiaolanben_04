@@ -1,0 +1,69 @@
+\documentclass[12pt]{ctexart}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\begin{document}
+
+\large
+\noindent 1.已知$a>0, b>0, a+2b=1$.求证：$\frac{1}{a} + \frac{2}{b}\ge9.$\\
+证：$\frac{1}{a} + \frac{2}{b}=(a+2b)(\frac{1}{a} + \frac{2}{b})=5 + \frac{2a}{b} + \frac{2b}{a}\ge 5 + 2\sqrt{\frac{2a}{b}\cdot\frac{2b}{a}}=9.$\\
+
+\noindent 2.设 $a,b,c\textgreater0.$求证：$(a+\frac{1}{b})(b+\frac{1}{c})(c+\frac{1}{a})\ge8.$\\
+证：$a+\frac{1}{b}\ge2\sqrt{a\cdot\frac{1}{b}}=2\sqrt\frac{a}{b}$,同理：$b+\frac{1}{c}\ge2\sqrt{\frac{b}{c}}, c+\frac{1}{a}\ge2\sqrt{\frac{c}{a}}$. 相乘即得。\\
+
+\noindent 3.已知$0\textless a,b,c\textless 1,$并且$ab+bc+ca=1.$证明：$\frac{a}{1-a^2}+\frac{b}{1-b^2}+\frac{c}{1-c^2}\ge\frac{3\sqrt{3}}{2}$\\
+证：$2a^2\cdot(1-a^2)\cdot(1-a^2)\le(\frac{2a^2+1-a^2+1-a^2}{3})^3=\frac{8}{27}$\\
+$\frac{a}{1-a^2}=\sqrt{\frac{a^2}{(1-a^2)^2}}=\sqrt{\frac{2a^2\cdot a^2}{(2a^2)(1-a^2)^2}}\ge\sqrt{\frac{2a^2}{\frac{8}{27}}}=\frac{3\sqrt{3}}{2}a^2$\\
+所以：$LHS\ge\frac{3\sqrt{3}}{2}(a^2+b^2+c^2)$\\
+又$a^2+b^2+c^2\ge ab+bc+ca=1$.得证.\\
+
+\noindent 4.已知$a,b,c\in R^{+},$且$abc\le1.$证明：$\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\ge1+\frac{6}{a+b+c}.$\\
+证：$(a+b+c)(\frac{1}{a}+\frac{1}{b}+\frac{1}{c})=3+\frac{a}{b}+\frac{a}{c}+\frac{b}{a}+\frac{b}{c}+\frac{c}{a}+\frac{c}{b}\ge9$\\
+所以$\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\ge\frac{9}{a+b+c}.$得:$\frac{2}{3}(\frac{1}{a}+\frac{1}{b}+\frac{1}{c})\ge\frac{6}{a+b+c}$\\
+又$\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\ge3\sqrt[3]{\frac{1}{abc}}\ge3(abc\le1)$\\
+所以$\frac{1}{3}(\frac{1}{a}+\frac{1}{b}+\frac{1}{c})\ge1$\\
+所以有$\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{1}{3}(\frac{1}{a}+\frac{1}{b}+\frac{1}{c})+\frac{2}{3}(\frac{1}{a}+\frac{1}{b}+\frac{1}{c})\ge1+\frac{6}{a+b+c}$\\
+
+\noindent 5.正实数$x,y,z$满足$xyz=1.$证明：$\frac{x^3+y^3}{x^2+xy+y^2}+\frac{y^3+z^3}{y^2+yz+z^2}+\frac{z^3+x^3}{z^2+zx+x^2}\ge2.$\\
+证：$x^3+y^3=(x+y)(x^2-xy+y^2).$\\
+又$3(x^2-xy+y^2)-(x^2+xy+y^2)=2(x-y)^2\ge0$得:$x^2-xy+y^2\ge\frac{x^2+xy+y^2}{3}$\\
+所以$x^3+y^3\ge(x+y)\cdot\frac{x^2+xy+y^2}{3}$\\
+所以$LHS\ge\frac{2}{3}(x+y+z)\ge\frac{2}{3}\cdot3\sqrt[3]{xyz}=2$\\
+
+\noindent 6. 设$a_1, a_2,......, a_n \textgreater 0,$且$a_1+a_2+......+a_n=1.$求证：\\
+$(\frac{1}{a_1^2}-1)(\frac{1}{a_2^2}-1)\cdot\cdot\cdot(\frac{1}{a_n^2}-1)\ge(n^2-1)^n.$\\
+证：记$S=a_1a_2..._an$\\
+$\frac{1}{a_i^2}-1=\frac{1-a_i^2}{a_i^2}=\frac{(1-a_i)(1+a_i)}{a_i^2}=\frac{(a_1+a_2+...+a_n-a_i)(a_1+...+a_n+a_i)}{a_i^2}$\\
+$\ge\frac{((n-1)\sqrt[n-1]{\frac{S}{a_i}})\cdot((n+1)\sqrt[n+1]{Sa_i})}{a_i^2}=\frac{(n^2-1)\sqrt[(n-1)(n+1)]{(\frac{S}{a_i})^{n+1}\cdot(Sa_i)^{n-1}}}{a_i^2}$\\
+$=\frac{(n^2-1)\sqrt[n^2-1]{S^{2n}a_i^{-(n+1)+(n-1)}}}{a_i^2}=\frac{(n^2-1)\sqrt[n^2-1]{S^{2n}a_i^{-2}}}{a_i^2}$\\
+所以$LHS\ge\frac{(n^2-1)^n\sqrt[n^2-1]{S^{2n^2}a_1^{-2}a_2^{-2}\cdot\cdot\cdot a_n^{-2}}}{a_1^2a_2^2...a_n^2}$
+$=\frac{(n^2-1)^n\sqrt[n^2-1]{s^{2n^2}\cdot S^{-2}}}{S^2}=(n^2-1)^n$\\
+
+\noindent 6.设a,b,c为正数，且a+b+c=3.求证：$\sqrt{a}+\sqrt{b}+\sqrt{c}\ge ab+bc+ca.$\\
+证：记$x=\sqrt{a},y=\sqrt{b},z=\sqrt{c}.$则有$x^2+y^2+z^2=3$\\
+由$\frac{x^2+y^2+z^2}{3}\ge(\frac{x+y+z}{3})^2$得$x+y+z\le3$即$\frac{x+y+z}{3}\le1$\\
+$x+y+z=\frac{x^2+y^2+z^2}{3}\cdot(x+y+z)\ge\frac{x^2+y^2+z^2}{3}\cdot(x+y+z)\cdot\frac{x+y+z}{3}$\\
+$=\frac{(x^2+y^2+z^2)(x+y+z)^2}{9}=\frac{(x^2+y^2+z^2)(x^2+y^2+z^2+2xy+2yz+2zx)}{9}$\\
+$=\frac{x^4+y^4+z^4+2x^2y^2+2y^2z^2+2z^2x^2+2x^3y+2x^2yz+2zx^3+2xy^3+2y^3z+2zxy^2+2xyz^2+2yz^3+2z^3x}{9}......(1)$\\
+又$x^4+y^4+4x^3y+4y^3x=x^4+y^4+x^3y+x^3y+x^3y+x^3y+y^3x+y^3x+y^3x+y^3x$\\
+$\ge10\sqrt[10]{x^{20}y^{20}}=10x^2y^2$\\
+同理有：\\
+$y^4+z^4+4y^3z+4z^3y\ge10y^2z^2$\\
+$z^4+x^4+4z^3x+4x^3z\ge10z^2x^2$\\
+以上三式相加整理得：$x^4+y^4+z^4+2x^3y+2y^3x+2y^3z+2z^3y+2z^3x+2x^3z$\\
+$\ge5(x^2y^2+y^2z^2+z^2x^2)$\\
+
+\noindent 8.已知$x,y,z\in R^+,$且$x+y+z=1.$求证：$(\frac{1}{x}-1)(\frac{1}{y}-1)(\frac{1}{z}-1)\ge(\frac{8}{3})^3$\\
+证：$\frac{1}{x}-1=\frac{1-x^2}{x}=\frac{(x+y+z)^2-x^2}{x}=\frac{y^2+z^2+2xy+2yz+2zx}{x}$\\
+又有：$y^2+z^2+2xy+2yz+2zx=y^2+z^2+xy+xy+yz+yz+zx+zx$\\
+$\ge8\sqrt[8]{x^4y^6z^6}$\\
+即：$\frac{1}{x}-1\ge\frac{8\sqrt[8]{x^4y^6z^6}}{x}.$同理$\frac{1}{y}-1\ge\frac{8\sqrt[8]{x^6y^4z^6}}{y}, \frac{1}{z}-1\ge\frac{8\sqrt[8]{x^6y^6z^4}}{z}.$\\
+相乘得：$(\frac{1}{x}-1)(\frac{1}{y}-1)(\frac{1}{z}-1)\ge$
+
+
+\end{document}
